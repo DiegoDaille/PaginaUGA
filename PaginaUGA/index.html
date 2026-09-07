@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Una Gran Avenida — Encuentra negocios en Chile</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+
+  <!-- Barra superior escritorio -->
+  <div class="desktop-topbar">
+    <div class="brand-name">UNA GRAN AVENIDA</div>
+    <nav>
+      <a href="index.html" class="active">Inicio</a>
+      <a href="explora.html">Explora</a>
+      <a href="servicios.html">Servicios UGA</a>
+      <a href="registro-negocio.html">Registra tu negocio</a>
+    </nav>
+    <a href="registro-negocio.html" class="btn btn-gold">Registra tu negocio</a>
+  </div>
+
+  <!-- Barra superior móvil -->
+  <div class="brand-bar">
+    <div class="brand-mark">UGA</div>
+    <span class="brand-name">UNA GRAN AVENIDA</span>
+    <span class="spacer"></span>
+  </div>
+
+  <main class="view">
+
+    <section class="hero-gold">
+      <div>
+        <h1>Encuentra negocios<span class="accent">en Chile</span></h1>
+        <p class="hero-sub">El directorio de negocios locales más completo de Chile.</p>
+
+        <form class="search-card" onsubmit="return false;">
+          <div class="search-input-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" placeholder="Busca por nombre, rubro o zona">
+          </div>
+          <div class="filter-row">
+
+  <a class="filter-chip">
+  filtra por:
+  </a>
+  
+  <a href="explora.html" class="filter-chip">
+  búsqueda avanzada
+  </a>
+
+  <div class="filter-chip">
+    <label>Filtrar por</label>
+    <select>
+      <option>Región y comuna</option>
+    </select>
+  </div>
+
+  <div class="filter-chip">
+    <label>Filtrar por</label>
+    <select>
+      <option>Rubro</option>
+    </select>
+  </div>
+
+  </div>
+          <a href="explora.html" class="btn btn-primary" style="margin-top:12px;">Buscar</a>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" style="text-align:center;">
+      <h2 style="font-size:24px;">Únete a nosotros<br><span style="color:var(--gold-deep);">Únete a UGA</span></h2>
+      <p style="margin-top:12px; color:var(--gray); font-size:14px;">¿Cuentas con un negocio? Entonces únete a UGA. Ayudaremos a que tu negocio llegue a más personas en Chile.</p>
+      <a href="registro-negocio.html" class="btn btn-primary" style="margin-top:18px; max-width:280px; margin-left:auto; margin-right:auto;">Registra tu negocio</a>
+    </section>
+
+    <section class="hero-dark">
+      <div>
+        <h2 style="font-size:22px;">Sobre<br>Una Gran Avenida</h2>
+        <p class="hero-sub" style="margin-top:12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </section>
+
+    <!--
+    <section class="section-tight home-tiles" style="padding-top:0; padding-bottom:0;">
+      <a href="servicios.html" class="banner-note" style="display:block; background:var(--paper); box-shadow:var(--shadow-card); margin-bottom:10px;">Servicios UGA</a>
+      <a href="registro-negocio.html" class="banner-note" style="display:block; background:var(--paper); box-shadow:var(--shadow-card); margin-bottom:10px;">Registra tu negocio</a>
+      <a href="explora.html" class="banner-note" style="display:block; background:var(--paper); box-shadow:var(--shadow-card); margin-bottom:10px;">Búsqueda avanzada</a>
+    </section>
+    -->
+
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 <strong>Una Gran Avenida</strong> — Directorio de negocios locales</span>
+  </footer>
+
+  <!-- Navegación inferior móvil -->
+  <nav class="bottom-nav">
+    <a href="index.html" class="active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9"/></svg>
+      Inicio
+    </a>
+    <a href="explora.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      Explora
+    </a>
+    <details class="more-menu">
+      <summary>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:4px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+          <span style="font-size:11px; font-weight:700;">Otros</span>
+        </div>
+      </summary>
+      <div class="more-panel">
+        <div class="more-title">Servicios y negocio</div>
+        <a href="servicios.html">Servicios UGA</a>
+        <a href="registro-negocio.html">Registra tu negocio</a>
+        <div class="more-title">Soporte</div>
+        <a href="resena.html">Dejar una reseña</a>
+        <a href="eliminar-ficha.html">Solicitar eliminación de ficha</a>
+      </div>
+    </details>
+  </nav>
+
+</div>
+</body>
+</html>

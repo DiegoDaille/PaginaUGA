@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solicitar eliminación de ficha — Una Gran Avenida</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+
+  <div class="desktop-topbar">
+    <div class="brand-name">UNA GRAN AVENIDA</div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="explora.html">Explora</a>
+      <a href="servicios.html">Servicios UGA</a>
+      <a href="registro-negocio.html">Registra tu negocio</a>
+    </nav>
+    <a href="ficha.html" class="btn btn-outline-light" style="color:var(--paper); border-color:var(--paper);">Volver a la ficha</a>
+  </div>
+
+  <main class="view">
+
+    <section class="hero-dark">
+      <div>
+        <h1>Solicitar eliminación<br>de ficha</h1>
+        <p class="hero-sub">Completa tus datos para iniciar el proceso de reclamación de ficha. El equipo UGA te contactará en menos de 24 horas hábiles.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="form-two-pane">
+        <form onsubmit="return false;">
+          <div class="form-grid two-col">
+            <div class="field">
+              <label>Nombre <span class="req">*</span></label>
+              <input type="text" placeholder="Su nombre" required>
+            </div>
+            <div class="field">
+              <label>Correo electrónico <span class="req">*</span></label>
+              <input type="email" placeholder="correo@xxx.com/cl" required>
+            </div>
+            <div class="field">
+              <label>Apellido <span class="req">*</span></label>
+              <input type="text" placeholder="Su apellido" required>
+            </div>
+            <div class="field">
+              <label>Teléfono <span class="req">*</span></label>
+              <input type="tel" placeholder="+56 9 xxxx xxxx" required>
+            </div>
+          </div>
+
+          <div class="field" style="margin-top:16px;">
+            <label>Razón de eliminación</label>
+            <textarea maxlength="300" placeholder="Explica por qué deseas la eliminación de la ficha (opcional)"></textarea>
+            <div class="char-count">0/300</div>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="margin-top:26px;">Solicitar eliminación</button>
+        </form>
+
+        <aside class="card" style="border-left:4px solid var(--danger);">
+          <h2 style="font-size:16px; margin-bottom:10px;">Antes de continuar</h2>
+          <p style="font-size:13.5px; color:var(--gray);">Solo el dueño verificado del negocio puede solicitar la eliminación de una ficha. El equipo UGA validará tu identidad antes de proceder con la baja definitiva.</p>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 <strong>Una Gran Avenida</strong> — Directorio de negocios locales</span>
+  </footer>
+
+  <nav class="bottom-nav">
+    <a href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9"/></svg>
+      Inicio
+    </a>
+    <a href="explora.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      Explora
+    </a>
+    <details class="more-menu">
+      <summary>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:4px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+          <span style="font-size:11px; font-weight:700;">Otros</span>
+        </div>
+      </summary>
+      <div class="more-panel">
+        <div class="more-title">Servicios y negocio</div>
+        <a href="servicios.html">Servicios UGA</a>
+        <a href="registro-negocio.html">Registra tu negocio</a>
+        <div class="more-title">Soporte</div>
+        <a href="resena.html">Dejar una reseña</a>
+        <a href="eliminar-ficha.html" class="active">Solicitar eliminación de ficha</a>
+      </div>
+    </details>
+  </nav>
+
+</div>
+</body>
+</html>

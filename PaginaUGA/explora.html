@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explora negocios — Una Gran Avenida</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+
+  <div class="desktop-topbar">
+    <div class="brand-name">UNA GRAN AVENIDA</div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="explora.html" class="active">Explora</a>
+      <a href="servicios.html">Servicios UGA</a>
+      <a href="registro-negocio.html">Registra tu negocio</a>
+    </nav>
+    <a href="registro-negocio.html" class="btn btn-gold">Registra tu negocio</a>
+  </div>
+
+  <div class="brand-bar" style="background:var(--black);">
+    <span class="brand-name" style="margin:0 auto; font-size:16px;">Explorador</span>
+  </div>
+
+  <main class="view">
+
+    <section class="section-tight" style="padding-top:20px;">
+      <form class="search-input-row" style="margin-bottom:14px; border:1.5px solid var(--line);" onsubmit="return false;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" value="farmacia" placeholder="Busca por nombre, rubro o zona">
+      </form>
+
+      <div class="results-header">
+        <span class="results-count">Mostrando 1–5 de 15 resultados</span>
+      </div>
+
+      <div class="results-grid">
+
+        <a href="ficha.html" class="result-card" style="display:block;">
+          <div class="result-top"><span class="status-dot"></span><span class="status-text">Abierto</span></div>
+          <div class="result-category">Salud y bienestar</div>
+          <h3>Farmacia Bienestar</h3>
+          <p class="result-meta"><strong>Dirección:</strong> Gran Av. José Miguel Carrera 8766</p>
+          <p class="result-meta">Pueblo, región, centro geográfico</p>
+          <div class="result-actions">
+            <span class="btn btn-outline">Llamar</span>
+            <span class="btn btn-outline">Mapa</span>
+          </div>
+          <span class="btn btn-gold" style="margin-top:8px;">Ver ficha completa</span>
+        </a>
+
+        <a href="ficha.html" class="result-card" style="display:block;">
+          <div class="result-top"><span class="status-dot"></span><span class="status-text">Abierto</span></div>
+          <div class="result-category">Salud y bienestar</div>
+          <h3>Farmacia Bienestar</h3>
+          <p class="result-meta"><strong>Dirección:</strong> Gran Av. José Miguel Carrera 8766</p>
+          <p class="result-meta">Pueblo, región, centro geográfico</p>
+          <div class="result-actions">
+            <span class="btn btn-outline">Llamar</span>
+            <span class="btn btn-outline">Mapa</span>
+          </div>
+          <span class="btn btn-gold" style="margin-top:8px;">Ver ficha completa</span>
+        </a>
+
+        <a href="ficha.html" class="result-card" style="display:block;">
+          <div class="result-top"><span class="status-dot" style="background:var(--danger);"></span><span class="status-text" style="color:var(--danger);">Cerrado</span></div>
+          <div class="result-category">Salud y bienestar</div>
+          <h3>Farmacia Bienestar</h3>
+          <p class="result-meta"><strong>Dirección:</strong> Gran Av. José Miguel Carrera 8766</p>
+          <p class="result-meta">Pueblo, región, centro geográfico</p>
+          <div class="result-actions">
+            <span class="btn btn-outline">Llamar</span>
+            <span class="btn btn-outline">Mapa</span>
+          </div>
+          <span class="btn btn-gold" style="margin-top:8px;">Ver ficha completa</span>
+        </a>
+
+        <a href="ficha.html" class="result-card" style="display:block;">
+          <div class="result-top"><span class="status-dot"></span><span class="status-text">Abierto</span></div>
+          <div class="result-category">Salud y bienestar</div>
+          <h3>Farmacia Bienestar</h3>
+          <p class="result-meta"><strong>Dirección:</strong> Gran Av. José Miguel Carrera 8766</p>
+          <p class="result-meta">Pueblo, región, centro geográfico</p>
+          <div class="result-actions">
+            <span class="btn btn-outline">Llamar</span>
+            <span class="btn btn-outline">Mapa</span>
+          </div>
+          <span class="btn btn-gold" style="margin-top:8px;">Ver ficha completa</span>
+        </a>
+
+        <a href="ficha.html" class="result-card" style="display:block;">
+          <div class="result-top"><span class="status-dot"></span><span class="status-text">Abierto</span></div>
+          <div class="result-category">Salud y bienestar</div>
+          <h3>Farmacia Bienestar</h3>
+          <p class="result-meta"><strong>Dirección:</strong> Gran Av. José Miguel Carrera 8766</p>
+          <p class="result-meta">Pueblo, región, centro geográfico</p>
+          <div class="result-actions">
+            <span class="btn btn-outline">Llamar</span>
+            <span class="btn btn-outline">Mapa</span>
+          </div>
+          <span class="btn btn-gold" style="margin-top:8px;">Ver ficha completa</span>
+        </a>
+
+      </div>
+
+      <nav class="pagination" aria-label="Paginación de resultados">
+        <span class="page-btn" style="border-color:transparent;">&lt;</span>
+        <span class="page-btn active">1</span>
+        <span class="page-btn">2</span>
+        <span class="page-btn">3</span>
+        <span class="page-btn">4</span>
+        <span class="page-btn">5</span>
+        <span class="page-btn" style="border-color:transparent;">&gt;</span>
+      </nav>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 <strong>Una Gran Avenida</strong> — Directorio de negocios locales</span>
+  </footer>
+
+  <nav class="bottom-nav">
+    <a href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9"/></svg>
+      Inicio
+    </a>
+    <a href="explora.html" class="active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      Explora
+    </a>
+    <details class="more-menu">
+      <summary>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:4px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+          <span style="font-size:11px; font-weight:700;">Otros</span>
+        </div>
+      </summary>
+      <div class="more-panel">
+        <div class="more-title">Servicios y negocio</div>
+        <a href="servicios.html">Servicios UGA</a>
+        <a href="registro-negocio.html">Registra tu negocio</a>
+        <div class="more-title">Soporte</div>
+        <a href="resena.html">Dejar una reseña</a>
+        <a href="eliminar-ficha.html">Solicitar eliminación de ficha</a>
+      </div>
+    </details>
+  </nav>
+
+</div>
+</body>
+</html>

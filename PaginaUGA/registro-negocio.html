@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registra tu negocio — Una Gran Avenida</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+
+  <div class="desktop-topbar">
+    <div class="brand-name">UNA GRAN AVENIDA</div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="explora.html">Explora</a>
+      <a href="servicios.html">Servicios UGA</a>
+      <a href="registro-negocio.html" class="active">Registra tu negocio</a>
+    </nav>
+    <a href="index.html" class="btn btn-outline-light" style="color:var(--paper); border-color:var(--paper);">Volver al inicio</a>
+  </div>
+
+  <main class="view">
+
+    <section class="hero-dark">
+      <div>
+        <span class="eyebrow-pill">Únete a UGA</span>
+        <h1>Registra tu negocio</h1>
+        <p class="hero-sub">Completa los datos de tu negocio para que miles de personas puedan encontrarte en el directorio.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <form onsubmit="return false;">
+
+        <div class="form-section-title">Datos personales</div>
+        <div class="form-grid two-col" style="margin-top:10px;">
+          <div class="field">
+            <label>Nombre <span class="req">*</span></label>
+            <input type="text" placeholder="Su nombre" required>
+          </div>
+          <div class="field">
+            <label>Apellido <span class="req">*</span></label>
+            <input type="text" placeholder="Su apellido" required>
+          </div>
+          <div class="field">
+            <label>Teléfono <span class="req">*</span></label>
+            <input type="tel" placeholder="+56 9 xxxx xxxx" required>
+          </div>
+          <div class="field">
+            <label>Correo electrónico <span class="req">*</span></label>
+            <input type="email" placeholder="correo@xxx.com/cl" required>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="form-section-title">Datos del negocio</div>
+        <div class="form-grid two-col" style="margin-top:10px;">
+          <div class="field">
+            <label>Nombre del negocio <span class="req">*</span></label>
+            <input type="text" placeholder="Nombre del negocio" required>
+          </div>
+          <div class="field">
+            <label>Rubro <span class="req">*</span></label>
+            <input type="text" placeholder="Panadería artesanal, veterinaria a domicilio…" required>
+          </div>
+          <div class="field">
+            <label>Categoría <span class="req">*</span></label>
+            <select required>
+              <option value="">Seleccione su categoría</option>
+              <option>Salud y bienestar</option>
+              <option>Alimentación</option>
+              <option>Servicios para el hogar</option>
+              <option>Mascotas</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Región <span class="req">*</span></label>
+            <select required>
+              <option value="">Seleccione su región</option>
+              <option>Metropolitana de Santiago</option>
+              <option>Valparaíso</option>
+              <option>Biobío</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Comuna <span class="req">*</span></label>
+            <select required>
+              <option value="">Seleccione su comuna</option>
+              <option>El Monte</option>
+              <option>Santiago</option>
+              <option>La Florida</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Dirección del negocio</label>
+            <input type="text" placeholder="Calle X, oficina 1234">
+          </div>
+        </div>
+
+        <div class="field" style="margin-top:16px;">
+          <label class="checkbox-row" style="margin-bottom:10px;">
+            <input type="checkbox">
+            <span>El negocio se basa en una sede</span>
+          </label>
+          <label>Descripción de su lugar (máx. 300 caracteres)</label>
+          <textarea maxlength="300" placeholder="Cuéntanos brevemente cómo es el lugar…"></textarea>
+        </div>
+
+        <div class="form-grid two-col" style="margin-top:16px;">
+          <div class="field">
+            <label>Teléfono del negocio <span class="req">*</span></label>
+            <input type="tel" placeholder="+56 2 xxxx xxxx" required>
+          </div>
+          <div class="field">
+            <label>Página web</label>
+            <input type="url" placeholder="https://tunegocio.cl">
+          </div>
+          <div class="field">
+            <label>Instagram</label>
+            <input type="text" placeholder="@tunegocio">
+          </div>
+          <div class="field">
+            <label>Facebook</label>
+            <input type="text" placeholder="@tunegocio">
+          </div>
+          <div class="field">
+            <label>TikTok</label>
+            <input type="text" placeholder="@tunegocio">
+          </div>
+          <div class="field">
+            <label>LinkedIn</label>
+            <input type="text" placeholder="Tunegocio">
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="form-section-title">Horario de atención</div>
+        <div class="form-grid two-col" style="margin-top:10px;">
+          <div class="field">
+            <label>Día de la semana <span class="req">*</span></label>
+            <select required>
+              <option value="">Día de la semana</option>
+              <option>Lunes a viernes</option>
+              <option>Todos los días</option>
+            </select>
+          </div>
+          <div class="field" style="display:flex; gap:10px;">
+            <div style="flex:1;">
+              <label>Apertura</label>
+              <input type="time" value="08:00">
+            </div>
+            <div style="flex:1;">
+              <label>Cierre</label>
+              <input type="time" value="22:00">
+            </div>
+          </div>
+        </div>
+        <p class="field-hint" style="margin-top:6px;">(Dejar vacío si ese día no abren)</p>
+
+        <table class="hours-table" style="margin-top:12px;">
+          <tr><td>Lunes</td><td>9:00 – 22:00</td></tr>
+          <tr><td>Martes</td><td>9:00 – 22:00</td></tr>
+          <tr><td>Miércoles</td><td>9:00 – 22:00</td></tr>
+          <tr><td>Jueves</td><td>9:00 – 22:00</td></tr>
+          <tr><td>Viernes</td><td>9:00 – 22:00</td></tr>
+          <tr><td>Sábado</td><td>Cerrado</td></tr>
+          <tr><td>Domingo</td><td>Cerrado</td></tr>
+        </table>
+
+        <label class="checkbox-row" style="margin-top:14px;">
+          <input type="checkbox">
+          <span>El negocio sigue operando durante <b>feriados</b></span>
+        </label>
+
+        <div class="field" style="margin-top:16px;">
+          <label>Descripción del negocio (máx. 300 caracteres)</label>
+          <textarea maxlength="300" placeholder="Cuéntanos brevemente qué ofreces, qué te hace especial o qué productos/servicios tienes…"></textarea>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="form-section-title">Métodos de pago</div>
+        <div style="display:flex; flex-direction:column; gap:10px; margin-top:12px;">
+          <label class="checkbox-row"><input type="checkbox"><span>Aceptan pago en <b>efectivo</b></span></label>
+          <label class="checkbox-row"><input type="checkbox"><span>Aceptan <b>tarjetas de débito</b></span></label>
+          <label class="checkbox-row"><input type="checkbox"><span>Aceptan <b>tarjetas de crédito</b></span></label>
+          <label class="checkbox-row"><input type="checkbox"><span>Aceptan <b>transferencias</b></span></label>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="form-section-title">Etiquetas</div>
+        <p class="field-hint" style="margin-top:6px; margin-bottom:10px;">Las etiquetas distinguen a tu negocio y facilitan a los clientes encontrarte.</p>
+        <div class="field">
+          <label>Etiquetas de tu negocio</label>
+          <select><option>Elige etiquetas para tu negocio</option></select>
+        </div>
+        <p class="field-hint" style="margin-top:10px;">Etiquetas actuales 4/15:</p>
+        <div class="tag-list">
+          <span class="tag">Pet-Friendly <button aria-label="Quitar etiqueta">✕</button></span>
+          <span class="tag">Delivery <button aria-label="Quitar etiqueta">✕</button></span>
+          <span class="tag">Reservas <button aria-label="Quitar etiqueta">✕</button></span>
+          <span class="tag">Propina esperada <button aria-label="Quitar etiqueta">✕</button></span>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:12px; margin-top:22px;">
+          <label class="checkbox-row">
+            <input type="checkbox">
+            <span>Acepto que <b>Una Gran Avenida</b> utilice mis datos para crear y gestionar la ficha de mi negocio en el directorio. No compartiremos tu información con terceros.</span>
+          </label>
+          <label class="checkbox-row">
+            <input type="checkbox">
+            <span>Quiero recibir el <b>Boletín Comercial de UGA</b> con promociones y novedades del directorio.</span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="margin-top:24px;">Registrar mi negocio gratis</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 <strong>Una Gran Avenida</strong> — Directorio de negocios locales</span>
+  </footer>
+
+  <nav class="bottom-nav">
+    <a href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9"/></svg>
+      Inicio
+    </a>
+    <a href="explora.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      Explora
+    </a>
+    <details class="more-menu">
+      <summary>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:4px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+          <span style="font-size:11px; font-weight:700;">Otros</span>
+        </div>
+      </summary>
+      <div class="more-panel">
+        <div class="more-title">Servicios y negocio</div>
+        <a href="servicios.html">Servicios UGA</a>
+        <a href="registro-negocio.html" class="active">Registra tu negocio</a>
+        <div class="more-title">Soporte</div>
+        <a href="resena.html">Dejar una reseña</a>
+        <a href="eliminar-ficha.html">Solicitar eliminación de ficha</a>
+      </div>
+    </details>
+  </nav>
+
+</div>
+</body>
+</html>
