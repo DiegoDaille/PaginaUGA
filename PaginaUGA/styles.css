@@ -2,9 +2,9 @@
 
 :root{
   /* Paleta */
-  --black: #17140F;
+  --black: #1A1A1A;
   --charcoal: #262019;
-  --gold: #F2B705;
+  --gold: #FAC010;
   --gold-deep: #C99A02;
   --gold-soft: #FCE6A6;
   --cream: #FFFCF5;
@@ -38,7 +38,7 @@ html{ -webkit-text-size-adjust: 100%; scroll-behavior: smooth; overflow-x: hidde
 body{
   margin: 0;
   font-family: var(--font-body);
-  background: var(--cream);
+  background: var(--gold);
   color: var(--black);
   line-height: 1.5;
   padding-bottom: calc(var(--nav-h) + 14px);
@@ -76,9 +76,37 @@ ul{ margin: 0; padding: 0; list-style: none; }
 
 .view{
   padding: 0 0 32px;
+  background: var(--gold);
+}
+
+.view-index{
+  padding: 0 0 32px;
+  background: var(--black);
+}
+
+.view-service{
+  padding: 0 0 32px;
+}
+
+.view-ser-det{
+  padding: 0 0 32px;
+}
+
+.view-exp{
+  padding: 0 0 32px;
+  
+}
+.section-index{
+background: var(--cream);
+padding: 28px var(--gutter);
 }
 
 .section{
+  padding: 28px var(--gutter);
+}
+
+.section-form{
+  background: var(--gold);
   padding: 28px var(--gutter);
 }
 
@@ -111,6 +139,7 @@ ul{ margin: 0; padding: 0; list-style: none; }
   font-weight: 700;
   font-size: 15px;
   letter-spacing: .02em;
+  color: var(--gold)
 }
 
 .brand-bar .spacer{ flex: 1; }
@@ -131,8 +160,6 @@ ul{ margin: 0; padding: 0; list-style: none; }
   background: var(--black);
   color: var(--paper);
   padding: 30px var(--gutter) 34px;
-  border-bottom-left-radius: var(--radius-lg);
-  border-bottom-right-radius: var(--radius-lg);
 }
 
 .eyebrow-pill{
@@ -244,7 +271,7 @@ ul{ margin: 0; padding: 0; list-style: none; }
 .btn-primary{ background: var(--black); color: var(--gold); }
 .btn-primary:hover{ opacity: .92; }
 
-.btn-gold{ background: var(--gold); color: var(--black); }
+.btn-gold{ background: var(--gold); color: var(--black); border: 1.5px solid var(--black) }
 .btn-gold:hover{ opacity: .92; }
 
 .btn-outline{
