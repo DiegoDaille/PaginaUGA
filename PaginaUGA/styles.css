@@ -245,7 +245,7 @@ padding: 28px var(--gutter);
   display:flex; align-items:center; justify-content:space-between;
   gap: 6px;
   cursor: pointer;
-  color: var(--paper);
+  color: var(--cream);
 }
 .filter-chip small{ display:block; font-weight: 400; color: var(--gray); font-size: 11px; }
 
