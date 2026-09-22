@@ -94,7 +94,7 @@ ul{ margin: 0; padding: 0; list-style: none; }
 
 .view-exp{
   padding: 0 0 32px;
-  
+  background: var(--gray-light);
 }
 .section-index{
 background: var(--cream);
@@ -107,7 +107,7 @@ padding: 28px var(--gutter);
 
 .section-form{
   background: var(--gold);
-  padding: 28px var(--gutter);
+  padding: 28px var(--gutter) 8px;
 }
 
 .section + .section{ border-top: 1px solid var(--line); }
@@ -213,19 +213,19 @@ padding: 28px var(--gutter);
   margin-top: 18px;
   border-radius: var(--radius-md);
   padding: 14px;
-  box-shadow: var(--shadow-card);
+  border: 1.5px solid var(--line);
 }
 
 .search-input-row{
   display:flex; align-items:center; gap: 10px;
-  background: var(--gray-light);
   border-radius: var(--radius-sm);
   padding: 12px 14px;
   margin-bottom: 12px;
+  background: var(--paper);
 }
 .search-input-row svg{ width:18px; height:18px; color: var(--gray); flex-shrink:0; }
 .search-input-row input{
-  border: none; background: transparent; outline: none; width: 100%;
+  border: none;  outline: none; width: 100%;
   font-size: 15px; color: var(--black);
 }
 
@@ -379,7 +379,8 @@ padding: 28px var(--gutter);
 /* Etiquetas / tags */
 .tag-list{ display:flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
 .tag{
-  
+  background: var(--black);
+  color: var(--paper);
   border: 1.5px solid var(--black);
   border-radius: 999px;
   padding: 7px 12px;
@@ -416,6 +417,16 @@ padding: 28px var(--gutter);
   box-shadow: var(--shadow-card);
   padding: 18px;
 }
+
+.notice-card{
+  background: #FDECEA;
+  border: 1.5px solid var(--danger);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  margin-bottom: 18px;
+}
+.notice-card h2{ color: var(--danger); }
+.notice-card p{ color: #7A2E24; }
 
 .service-group-title{
   font-family: var(--font-display);
@@ -466,6 +477,7 @@ padding: 28px var(--gutter);
   box-shadow: var(--shadow-card);
   padding: 16px;
   margin-bottom: 14px;
+  border: 1.5px solid var(--black);
 }
 .result-top{
   display:flex; align-items:center; gap: 8px; margin-bottom: 4px;
@@ -667,6 +679,21 @@ padding: 28px var(--gutter);
   padding: 0 8px;
 }
 .page-btn.active{ background: var(--gold); border-color: var(--gold); color: var(--black); }
+
+
+/*Pasar pagina*/
+.page-jump{
+  display:flex; align-items:center; gap:6px;
+  margin-left: 8px;
+}
+.page-jump input{
+  width: 54px;
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  font-size: 13px;
+  text-align: center;
+}
 
 /* =========================================================
    Navegación inferior (móvil) — fija
