@@ -8,10 +8,10 @@
   --gold-deep: #C99A02;
   --gold-soft: #FCE6A6;
   --cream: #FFFCF5;
-  --paper: #FFFFFF;
+  --paper: ##FFFCF5;
   --line: #EDE3C8;
   --gray: #6E665A;
-  --gray-light: #F3EEE1;
+  --gray-light: ##FFFCF5;
   --success: #3C9A5F;
   --danger: #C64B3C;
 
@@ -355,9 +355,10 @@ padding: 28px var(--gutter);
   margin-top: 4px;
 }
 
-.field-hint{ font-size: 12px; color: var(--gray); margin-top: 4px; }
+.field-hint{ font-size: 12px; color: var(--black); margin-top: 4px; }
 
 .checkbox-row{
+  color: var(--black) !important;
   display:flex; align-items:flex-start; gap: 10px;
   font-size: 13px; color: var(--gray);
 }
@@ -370,7 +371,7 @@ padding: 28px var(--gutter);
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: .06em;
-  color: var(--gray);
+  color: var(--black);
   margin-bottom: 4px;
 }
 
@@ -379,8 +380,9 @@ padding: 28px var(--gutter);
 /* Etiquetas / tags */
 .tag-list{ display:flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
 .tag{
-  background: var(--black);
-  color: var(--paper);
+  background-color: var(--cream);
+  color: var(--black);
+
   border: 1.5px solid var(--black);
   border-radius: 999px;
   padding: 7px 12px;
@@ -388,6 +390,16 @@ padding: 28px var(--gutter);
   font-weight: 600;
   display:flex; align-items:center; gap: 6px;
 }
+
+.tag-ficha{
+  border: 1.5px solid var(--black);
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-size: 12.5px;
+  font-weight: 600;
+  display:flex; align-items:center; gap: 6px;
+}
+
 .tag button{ background:none; border:none; cursor:pointer; font-size: 13px; line-height:1; color: var(--gray); }
 
 /* Franja de precio dentro de un panel dorado */
@@ -412,6 +424,7 @@ padding: 28px var(--gutter);
    ========================================================= */
 
 .card{
+  margin-top: 20px;
   background: var(--paper);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-card);
@@ -599,7 +612,7 @@ padding: 28px var(--gutter);
 
 .hours-table{ width: 100%; border-collapse: collapse; font-size: 13.5px; }
 .hours-table td{ padding: 7px 0; border-bottom: 1px solid var(--line); }
-.hours-table td:last-child{ text-align:right; color: var(--gray); }
+.hours-table td:last-child{ text-align:right; color: var(--black); }
 .hours-table tr.today td{ font-weight: 700; color: var(--black); }
 .hours-table tr.today td:last-child{ color: var(--gold-deep); }
 
